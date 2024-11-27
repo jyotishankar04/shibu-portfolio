@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: white;
+        font-family: sans-serif;
+        gap: 20px;
+        padding: 20px;
+        padding-top: 10px;
+        justify-content: center;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      .navbar {
+        background: #000;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        margin-left: 20px;
+        font-size: 30px;
+      }
+      .links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-right: 40px;
+      }
+      .links > a {
+        text-decoration: none;
+        color: white;
+      }
+      .links > a:hover {
+        color: red;
+      }
+      .links > a:active {
+        color: green;
+      }
+      .hero {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+      }
+      .hero > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        flex: 1;
+      }
+      .hero > div > h1 {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      .hero > div > p {
+        text-align: center;
+        color: white;
+        max-width: 60%;
+      }
+      .image {
+        border-radius: 50%;
+        width: 400px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
+        transition: all 0.5s ease-in-out;
+      }
+      .iam {
+        color: red;
+        font-size: 20px;
+      }
+      .name {
+        color: white;
+        font-size: 50px;
+      }
+      .fa-x {
+        color: beige;
+      }
+      .fa-instagram {
+        color: rgb(204, 68, 68);
+      }
+      .socials {
+        display: flex;
+        gap: 20px;
+      }
+      .dot {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        Shibu
+        <span class="dot">S.</span>
+      </div>
+      <div class="links">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </nav>
+    <main class="hero">
+      <div>
+        <h1>
+          Hey There <br />
+          <span class="iam">I'm </span><br />
+          <span class="name">Shibu Sethi</span>
+        </h1>
+        <p>
+          CR, Department of Computer Science,
+          <br />
+          Fakir Mohan Autonomous College, Balasore
+        </p>
+        <div class="socials">
+          <a href="https://www.instagram.com/shibuu_26/">
+            <i class="fa-brands fa-instagram"> </i>
+          </a>
+          <a href="https://x.com/_shibuu_26">
+            <i class="fa-brands fa-x"> </i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <img
+          src="./394548741_641859911451568_2045804302808469682_n.heic"
+          alt="image"
+          width="400"
+          class="image"
+        />
+      </div>
+    </main>
+  </body>
+</html>
